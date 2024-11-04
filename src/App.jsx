@@ -1,32 +1,11 @@
+import _header from "./assets/components/_header"
 
 function App() {
 
   return (
     <>
-      <header>
-        <hr />
-        <a>Projects</a>
-        <a>Resume</a>
-        <a>Contact</a>
-        <button></button>
-      </header>
+      <_header />
       <main>
-        <section>
-          <p>Hey, I'm</p>
-          <h1>Fabio Mijango</h1>
-          <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-
-          </p>
-        </section>
-
-        <section id="contact"> {/* Section for contact me */}
-          <button>Send an email</button>
-          <button>GitHub</button>
-          <button>Curriculum</button>
-        </section>
 
         <section id="skills"> {/* Section for the skills */}
           <h2>Skills</h2>

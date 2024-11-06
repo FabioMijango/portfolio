@@ -5,9 +5,10 @@ ContactMeButton.propTypes = {
    text: PropTypes.string.isRequired,
    link: PropTypes.string.isRequired,
 };
+// eslint-disable-next-line react/prop-types
 export default function ContactMeButton({ text, link, children }) {
    return (
-      <button onClick={link} className="h-20 w-40 flex rounded-lg p-1 bg-gradient-to-r from-gr-0 to-gr-30 transition duration-300 ease-in-out lg:flex-row">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="h-20 w-40 flex rounded-lg p-1 bg-gradient-to-r from-gr-0 to-gr-30 transition duration-300 ease-in-out lg:flex-row">
          <p className="h-[74px] w-[156px]  font-Inter rounded-lg  gap-x-2 flex items-center justify-center place-self-center hover:bg-transparent
          text-black bg-white
          hover:text-white
@@ -21,7 +22,7 @@ export default function ContactMeButton({ text, link, children }) {
             )}
             {text}
          </p>
-      </button>
+      </a>
    );
 }
 

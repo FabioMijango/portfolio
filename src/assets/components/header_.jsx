@@ -83,7 +83,7 @@ function Header_() {
             <ContactMeButton text="Send an email" link={""} icon={CiMail}>
                <CiMail size={23}/>
             </ContactMeButton>
-            <ContactMeButton text="Github" link={""} icon={FaGithub}>
+            <ContactMeButton text="Github" link={"https://github.com/FabioMijango"} icon={FaGithub}>
                <FaGithub size={20} />
             </ContactMeButton>
             <ContactMeButton text="Download CV" link={""} icon={SiReaddotcv}>

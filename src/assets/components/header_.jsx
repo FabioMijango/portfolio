@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 import Switcher from "./darkModeSwitch";
+import ContactMeButton from "./contactme_button";
+import { FaGithub } from "react-icons/fa";
+import { SiReaddotcv } from "react-icons/si";
+import { CiMail } from "react-icons/ci";
+
+
 
 function Header_() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +23,8 @@ function Header_() {
       return () => window.removeEventListener("resize", handleResize);
    }, []);
 
-   useEffect(() => { {/* Just a first time check for the menu */ }
+   useEffect(() => {
+      {/* Just a first time check for the menu */ }
       // Command to execute on page load
       if (window.innerWidth > 1024) {
          setIsMenuOpen(true);
@@ -40,7 +47,7 @@ function Header_() {
             }
 
             {isMenuOpen &&
-               <div className="flex flex-col items-center gap-y-8 lg:flex-row ">
+               <div className="flex flex-col items-center gap-y-8 lg:flex-row">
                   <a href="#about" className=" font-Inter font-light text-black dark:text-white lg:px-6 ">About</a>
                   <a href="#projects" className="font-Inter font-light text-black dark:text-white lg:px-6">Projects</a>
                   <a href="#contact" className="font-Inter font-light text-black dark:text-white lg:px-6">Contact</a>
@@ -67,28 +74,22 @@ function Header_() {
                   Sed nisi. Nulla quis sem at nibh elementum imperdiet.
                </p>
             </div>
-            <div className="animate-pulse max-w-3xl w-80 h-80 bg-gray-700 rounded-lg place-self-center" />
+            <div className="max-w-3xl w-80 h-80 bg-gray-700 rounded-lg place-self-center" />
 
             {/* </div> */}
          </section>
 
-         {/* <section id="contact" className="place-self-center flex pb-16 gap-10"> {/* Section for contact me 
-            <button className="max-w-xs w-auto rounded-lg p-1 relative bg-gradient-to-r from-gr-0 to-gr-30">
-               <div className="text-white font-Inter font-light rounded-lg bg-secondary-darkgray p-5 items-center place-self-center hover:bg-transparent">
-                  Send an email
-               </div>
-            </button>
-            <button className="max-w-xs w-auto rounded-lg p-1 relative bg-gradient-to-r from-gr-30 to-gr-55">
-               <div className="text-white font-Inter font-light rounded-lg bg-secondary-darkgray p-5 items-center place-self-center hover:bg-transparent">
-                  GitHub
-               </div>
-            </button>
-            <button className="max-w-xs w-auto rounded-lg p-1 relative bg-gradient-to-r from-gr-80 to-gr-100">
-               <div className="text-white font-Inter font-light rounded-lg bg-secondary-darkgray p-5 items-center place-self-center hover:bg-transparent">
-                  Curriculum
-               </div>
-            </button>
-         </section> */}
+         <section id="contact" className="place-self-center flex flex-col pb-16 gap-10 lg:flex-row"> {/* Section for contact me */}
+            <ContactMeButton text="Send an email" link={""} icon={CiMail}>
+               <CiMail size={23}/>
+            </ContactMeButton>
+            <ContactMeButton text="Github" link={""} icon={FaGithub}>
+               <FaGithub size={20} />
+            </ContactMeButton>
+            <ContactMeButton text="Download CV" link={""} icon={SiReaddotcv}>
+               <SiReaddotcv size={20}/>
+            </ContactMeButton>
+         </section>
       </header>
    );
 }

@@ -1,10 +1,10 @@
-import _header from "./assets/components/_header"
+import Header_ from "./assets/components/header_"
 
 function App() {
 
   return (
     <>
-      <_header />
+      <Header_ />
       <main>
 
         <section id="skills"> {/* Section for the skills */}

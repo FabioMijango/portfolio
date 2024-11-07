@@ -4,12 +4,15 @@ import ContactMeButton from "./contactme_button";
 import { FaGithub } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
 import { CiMail } from "react-icons/ci";
+import useDarkSide from '../service/useDarkSide';
 
 
 
 function Header_() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+   const [colorTheme, setTheme] = useDarkSide(); 
+
 
    useEffect(() => {
       const handleResize = () => {
@@ -19,17 +22,14 @@ function Header_() {
 
       };
 
+      if (window.innerWidth > 1024) {
+         setIsMenuOpen(true);
+      }
+
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
    }, []);
 
-   useEffect(() => {
-      {/* Just a first time check for the menu */ }
-      // Command to execute on page load
-      if (window.innerWidth > 1024) {
-         setIsMenuOpen(true);
-      }
-   }, []);
 
    return (
       <header className="bg-white flex-col h-auto w-full dark:bg-secondary-darkgray">
@@ -79,7 +79,7 @@ function Header_() {
             {/* </div> */}
          </section>
 
-         <section id="contact" className="place-self-center flex flex-col pb-16 gap-10 lg:flex-row"> {/* Section for contact me */}
+         <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 lg:flex-row"> {/* Section for contact me */}
             <ContactMeButton text="Send an email" link={""} icon={CiMail}>
                <CiMail size={23}/>
             </ContactMeButton>

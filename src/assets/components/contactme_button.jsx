@@ -1,10 +1,4 @@
-import PropTypes from 'prop-types';
-import { Children } from 'react';
 
-ContactMeButton.propTypes = {
-   text: PropTypes.string.isRequired,
-   link: PropTypes.string.isRequired,
-};
 // eslint-disable-next-line react/prop-types
 export default function ContactMeButton({ text, link, children }) {
    return (
@@ -21,7 +15,3 @@ export default function ContactMeButton({ text, link, children }) {
       </a>
    );
 }
-
-// hover:bg-transparent hover:text-white
-// dark:bg-dark-secondary-darkgray dark:text-dark-white
-// dark:hover:bg-transparent dark:hover:text-dark-white

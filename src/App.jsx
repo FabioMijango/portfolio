@@ -1,30 +1,15 @@
 import Header_ from "./assets/components/header_"
+import Skills from "./assets/components/skills"
 
 function App() {
 
   return (
     <>
       <Header_ />
-      <main>
+      <main className="bg-primary-white dark:bg-black flex flex-col justify-center items-center">
 
-        <section id="skills"> {/* Section for the skills */}
-          <h2>Skills</h2>
-          <div>
-            <svg>{/* Insert image */}</svg>
-            <h3>SQL</h3>
-          </div>
-          <div>
-            <svg>{/* Insert image */}</svg>
-            <h3>C++</h3>
-          </div>
-          <div>
-            <svg>{/* Insert image */}</svg>
-            <h3>Python</h3>
-          </div>
-          <div>
-            <svg>{/* Insert image */}</svg>
-            <h3>React</h3>
-          </div>
+        <section id="skills w-96"> {/* Section for the skills */}
+          <Skills />
         </section>
 
         <section id="projects"> {/* Section for the projects */}

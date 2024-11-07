@@ -17,6 +17,7 @@ export default {
       colors: {
         "primary-black": "#111111",
         "secondary-darkgray": "#1A1A1A",
+        "primary-white": "#FBFBFB",
         "gr-0": "#9845E8",
         "gr-30": "#6192f5",
         "gr-55": "#33D2FF",

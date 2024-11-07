@@ -15,11 +15,7 @@ export default function ContactMeButton({ text, link, children }) {
          dark:bg-secondary-darkgray dark:text-white
          dark:hover:bg-transparent dark:hover:text-white
          transition duration-300 ease-in-out">
-            {Children.map(children, child =>
-               <>
-                  {child}
-               </>
-            )}
+            {children}
             {text}
          </p>
       </a>

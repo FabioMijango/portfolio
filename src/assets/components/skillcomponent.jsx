@@ -1,3 +1,4 @@
+import { FaCode } from "react-icons/fa";
 
 export default function Skill_Comp({ skill, children }) {
 
@@ -7,10 +8,9 @@ export default function Skill_Comp({ skill, children }) {
             <div className="w-36 h-16 flex justify-center items-center relative rounded-2xl 
             text-black dark:text-white bg-white dark:bg-black
             hover:bg-transparent hover:text-white
-            
             ">
                <div className="absolute left-3">
-                  {children}
+                  {children ? children : <FaCode />}
                </div>
                <h3 className="w-auto max-w-[70px] pl-3 text-center ">{skill}</h3>
             </div>

@@ -1,70 +1,54 @@
-import { FaCode } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 import Skill_Comp from "./skillcomponent";
+import { IoLogoCss3, IoLogoGithub, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
+import { PiFileSql } from "react-icons/pi";
+import { SiCplusplus, SiGodotengine, SiMongodb } from "react-icons/si";
+import { IoLogoDocker, IoLogoReact } from "react-icons/io5";
+
 
 export default function Skills() {
 
    return (
       <>
          <h2 className="text-black dark:text-white text-2xl p-8 font-Inter font-light border-b-2 border-gray-300 dark:border-gray-700 mb-4
-         sm:w-96 lg:w-[700px]">
+         sm:w-[500px] lg:w-[700px]">
             My Skills
          </h2>
 
 
-         <div className="grid grid-cols-2 grid-flow-row gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            <Skill_Comp skill={"SQL"}>
-               <FaCode />
-            </Skill_Comp>
+         <div className="grid grid-cols-2 grid-flow-row gap-4 sm:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-5">
             <Skill_Comp skill={"Python"}>
-               <FaCode />
+               <FaPython />
             </Skill_Comp>
             <Skill_Comp skill={"JavaScript"}>
-               <FaCode />
+               <IoLogoJavascript />
+            </Skill_Comp>
+            <Skill_Comp skill={"SQL"}>
+               <PiFileSql />
+            </Skill_Comp>
+            <Skill_Comp skill={"MongoDB"}>
+               <SiMongodb />
             </Skill_Comp>
             <Skill_Comp skill={"React"}>
-               <FaCode />
+               <IoLogoReact />
             </Skill_Comp>
             <Skill_Comp skill={"HTML"}>
-               <FaCode />
+               <IoLogoHtml5 />
             </Skill_Comp>
             <Skill_Comp skill={"CSS"}>
-               <FaCode />
+               <IoLogoCss3 />
             </Skill_Comp>
-            <Skill_Comp skill={"Django"}>
-               <FaCode />
+            <Skill_Comp skill={"Github"}>
+               <IoLogoGithub />
             </Skill_Comp>
-            <Skill_Comp skill={"Bootstrap"}>
-               <FaCode />
+            <Skill_Comp skill={"Docker"}>
+               <IoLogoDocker />
             </Skill_Comp>
-            <Skill_Comp skill={"Tailwind CSS"}>
-               <FaCode />
+            <Skill_Comp skill={"Godot Engine"}>
+               <SiGodotengine />
             </Skill_Comp>
-            <Skill_Comp skill={"Git"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"GitHub"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"VS Code"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Jupyter Notebook"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Google Colab"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Microsoft Excel"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Microsoft PowerPoint"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Microsoft Word"}>
-               <FaCode />
-            </Skill_Comp>
-            <Skill_Comp skill={"Google Sheets"}>
-               <FaCode />
+            <Skill_Comp skill={"C++"}>
+               <SiCplusplus />
             </Skill_Comp>
          </div>
       </>

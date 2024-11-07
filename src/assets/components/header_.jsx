@@ -80,7 +80,7 @@ function Header_() {
             {/* </div> */}
          </section>
 
-         <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 lg:flex-row"> {/* Section for contact me */}
+         <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 sm:flex-row"> {/* Section for contact me */}
             <ContactMeButton text="Send an email" link={""} icon={CiMail}>
                <CiMail size={23}/>
             </ContactMeButton>

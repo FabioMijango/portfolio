@@ -7,6 +7,15 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      animation: {
+        "bounce_v2": "bounce_v2 1s infinite",
+      },
+      keyframes: {
+        bounce_v2: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
       screens: {
         'xs': '375px',
       },

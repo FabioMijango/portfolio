@@ -11,6 +11,7 @@ import useDarkSide from '../service/useDarkSide';
 function Header_() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+   // eslint-disable-next-line no-unused-vars
    const [colorTheme, setTheme] = useDarkSide(); 
 
 

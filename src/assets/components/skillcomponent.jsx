@@ -4,10 +4,10 @@ export default function Skill_Comp({ skill, children }) {
 
    return (
       <>
-         <div className="w-[148px] h-[68px] rounded-2xl flex justify-center items-center bg-gradient-to-r from-gr-0 to-gr-100 hover:animate-bounce_v2">
+         <div className="w-[148px] h-[68px] rounded-2xl flex justify-center items-center bg-gradient-to-r from-gr-0 to-gr-100">
             <div className="w-36 h-16 flex justify-center items-center relative rounded-2xl 
             text-black dark:text-white bg-white dark:bg-black
-            hover:bg-transparent hover:text-white
+            hover:bg-transparent hover:text-white dark:hover:bg-transparent
             ">
                <div className="absolute left-3">
                   {children ? children : <FaCode />}

@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Skill_Comp from "./skillcomponent";
 import { FaPython } from "react-icons/fa";
 import { IoLogoCss3, IoLogoGithub, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
 import { PiFileSql } from "react-icons/pi";
 import { SiCplusplus, SiGodotengine, SiMongodb } from "react-icons/si";
 import { IoLogoDocker, IoLogoReact } from "react-icons/io5";
-import Skill_Comp from "./skillcomponent";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 export default function Skills() {
@@ -85,41 +85,7 @@ export default function Skills() {
             </Slider>
          </div>
 
-         {/* <div className="grid grid-cols-2 grid-flow-row gap-4 sm:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-5">
-            <Skill_Comp skill={"Python"}>
-               <FaPython />
-            </Skill_Comp>
-            <Skill_Comp skill={"JavaScript"}>
-               <IoLogoJavascript />
-            </Skill_Comp>
-            <Skill_Comp skill={"SQL"}>
-               <PiFileSql />
-            </Skill_Comp>
-            <Skill_Comp skill={"MongoDB"}>
-               <SiMongodb />
-            </Skill_Comp>
-            <Skill_Comp skill={"React"}>
-               <IoLogoReact />
-            </Skill_Comp>
-            <Skill_Comp skill={"HTML"}>
-               <IoLogoHtml5 />
-            </Skill_Comp>
-            <Skill_Comp skill={"CSS"}>
-               <IoLogoCss3 />
-            </Skill_Comp>
-            <Skill_Comp skill={"Github"}>
-               <IoLogoGithub />
-            </Skill_Comp>
-            <Skill_Comp skill={"Docker"}>
-               <IoLogoDocker />
-            </Skill_Comp>
-            <Skill_Comp skill={"Godot Engine"}>
-               <SiGodotengine />
-            </Skill_Comp>
-            <Skill_Comp skill={"C++"}>
-               <SiCplusplus />
-            </Skill_Comp>
-         </div> */}
+
       </>
    );
 }

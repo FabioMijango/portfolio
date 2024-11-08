@@ -8,9 +8,13 @@ function App() {
       <Header_ />
       <main className="bg-primary-white dark:bg-black flex flex-col justify-center items-center">
 
-        <section id="skills w-96"> {/* Section for the skills */}
-          <Skills />
+        <section id="skills" className="w-full flex justify-center"> {/* Section for the skills */}
+          <div className="w-80 sm:w-[500px] lg:w-[700px]">
+            <Skills />
+          </div>
         </section>
+
+        <hr className="pt-40"/>
 
         <section id="projects"> {/* Section for the projects */}
           <h2>Projects</h2>

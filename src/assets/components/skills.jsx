@@ -42,7 +42,7 @@ export default function Skills() {
 
    return (
       <>
-         <h2 className="text-black dark:text-white text-2xl p-8 font-Inter font-light border-b-2 border-gray-300 dark:border-gray-700 mb-4
+         <h2 className="text-black dark:text-white text-2xl p-8 font-Inter font-extralight border-b-2 border-gray-300 dark:border-gray-700 mb-4
          sm:w-[500px] lg:w-[700px]">
             My Skills
          </h2>

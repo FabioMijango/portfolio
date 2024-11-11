@@ -7,8 +7,7 @@ export default function ContactMeButton({ text, link, children }) {
          text-black bg-white
          hover:text-white
          dark:bg-secondary-darkgray dark:text-white
-         dark:hover:bg-transparent dark:hover:text-white
-         transition duration-300 ease-in-out">
+         dark:hover:bg-transparent dark:hover:text-white">
             {children}
             {text}
          </p>

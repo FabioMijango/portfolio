@@ -34,7 +34,7 @@ function Header_() {
 
    return (
       <header className="bg-white flex-col h-auto w-full dark:bg-secondary-darkgray">
-         <nav className="p-8 flex flex-col items-center fixed top-0 right-0 gap-y-8">
+         <nav className="p-8 flex flex-col items-center fixed top-0 right-0 gap-y-8 z-20">
             <div className="bg-slate-100 dark:bg-neutral-800 size-auto p-4 rounded flex flex-col items-center lg:flex-row">
                {(isMobile) &&
                   <>

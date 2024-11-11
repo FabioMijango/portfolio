@@ -12,7 +12,7 @@ function Header_() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
    // eslint-disable-next-line no-unused-vars
-   const [colorTheme, setTheme] = useDarkSide(); 
+   const [colorTheme, setTheme] = useDarkSide();
 
 
    useEffect(() => {
@@ -35,28 +35,30 @@ function Header_() {
    return (
       <header className="bg-white flex-col h-auto w-full dark:bg-secondary-darkgray">
          <nav className="p-8 flex flex-col items-center fixed top-0 right-0 gap-y-8">
-            {(isMobile) &&
-               <>
-                  <button className="font-Inter font-light text-black dark:text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                     </svg>
-                  </button>{/*Hamburger*/}
-               </>
-            }
+            <div className="bg-slate-100 dark:bg-neutral-800 size-auto p-4 rounded flex flex-col items-center lg:flex-row">
+               {(isMobile) &&
+                  <>
+                     <button className="font-Inter font-light text-black dark:text-white " onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                           <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                           <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                     </button>{/*Hamburger*/}
+                  </>
+               }
 
-            {isMenuOpen &&
-               <div className="flex flex-col items-center gap-y-8 lg:flex-row">
-                  <a href="#about" className=" font-Inter font-light text-black dark:text-white lg:px-6 ">About</a>
-                  <a href="#projects" className="font-Inter font-light text-black dark:text-white lg:px-6">Projects</a>
-                  <a href="#contact" className="font-Inter font-light text-black dark:text-white lg:px-6">Contact</a>
-                  <Switcher /> {/* Dark mode switch */}
-               </div>
+               {isMenuOpen &&
+                  <div className="flex flex-col items-center gap-y-8 lg:flex-row py-2">
+                     <a href="#about" className=" font-Inter font-light text-black dark:text-white lg:px-6 ">About</a>
+                     <a href="#projects" className="font-Inter font-light text-black dark:text-white lg:px-6">Projects</a>
+                     <a href="#contact" className="font-Inter font-light text-black dark:text-white lg:px-6">Contact</a>
+                     <Switcher /> {/* Dark mode switch */}
+                  </div>
 
-            }
+               }
 
+            </div>
          </nav>
          <section className="p-8 pt-16 flex flex-col  items-center justify-center lg:flex-row lg:gap-x-24"> {/* Section for the hero */}
             <div className="">
@@ -82,13 +84,13 @@ function Header_() {
 
          <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 sm:flex-row"> {/* Section for contact me */}
             <ContactMeButton text="Send an email" link={""} icon={CiMail}>
-               <CiMail size={23}/>
+               <CiMail size={23} />
             </ContactMeButton>
             <ContactMeButton text="Github" link={"https://github.com/FabioMijango"} icon={FaGithub}>
                <FaGithub size={20} />
             </ContactMeButton>
             <ContactMeButton text="Download CV" link={""} icon={SiReaddotcv}>
-               <SiReaddotcv size={20}/>
+               <SiReaddotcv size={20} />
             </ContactMeButton>
          </section>
       </header>

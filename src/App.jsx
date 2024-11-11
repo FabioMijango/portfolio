@@ -15,7 +15,7 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="w-80 sm:w-[500px] lg:w-[700px] flex flex-col justify-center"> {/* Section for the projects */}
+        <section id="projects" className="w-80 sm:w-[500px] lg:w-[700px] flex flex-col sm:items-center justify-center"> {/* Section for the projects */}
           <Proyects />
           {/* Add more projects as needed */}
         </section>

@@ -8,7 +8,7 @@ export default function Proyects() {
          sm:w-[500px] lg:w-[700px]">
             Projects
          </h2>
-         <div className="">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:w-[600px] lg:w-[900px]  gap-x-3">
             <Proyect title="title proyect" img="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
                desc="Lorem ipsum dolor " link={""}
             />
@@ -18,7 +18,12 @@ export default function Proyects() {
             <Proyect title="title proyect 3" img="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
                desc="Lorem ipsum dolor " link={""}
             />
-
+            <Proyect title="title proyect 4" img="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
+               desc="Lorem ipsum dolor " link={""}
+            />
+            <Proyect title="title proyect 5" img="https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0"
+               desc="Lorem ipsum dolor " link={""}
+            />
          </div>
       </>
    );

@@ -1,4 +1,5 @@
 import Header_ from "./assets/components/header_"
+import Proyects from "./assets/components/proyects"
 import Skills from "./assets/components/skills"
 
 function App() {
@@ -14,18 +15,8 @@ function App() {
           </div>
         </section>
 
-        <hr className="pt-40"/>
-
-        <section id="projects"> {/* Section for the projects */}
-          <h2>Projects</h2>
-          <div>
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-            </p>
-          </div>
+        <section id="projects" className="w-80 sm:w-[500px] lg:w-[700px] flex flex-col sm:items-center justify-center"> {/* Section for the projects */}
+          <Proyects />
           {/* Add more projects as needed */}
         </section>
       </main>

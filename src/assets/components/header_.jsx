@@ -83,7 +83,7 @@ function Header_() {
          </section>
 
          <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 sm:flex-row"> {/* Section for contact me */}
-            <ContactMeButton text="Send an email" link={""} icon={CiMail}>
+            <ContactMeButton text="Send an email" link={"mailto:fabiomijango@gmail.com"} icon={CiMail}>
                <CiMail size={23} />
             </ContactMeButton>
             <ContactMeButton text="Github" link={"https://github.com/FabioMijango"} icon={FaGithub}>

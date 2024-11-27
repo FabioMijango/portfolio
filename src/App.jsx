@@ -10,7 +10,7 @@ function App() {
       <main className="bg-primary-white dark:bg-black flex flex-col justify-center items-center">
 
         <section id="skills" className="w-full flex justify-center"> {/* Section for the skills */}
-          <div className="w-80 sm:w-[500px] lg:w-[700px]">
+          <div className="w-80 sm:w-[500px] lg:w-[700px] sm:flex flex-col justify-center items-center">
             <Skills />
           </div>
         </section>

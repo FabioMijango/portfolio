@@ -68,13 +68,17 @@ function Header_() {
                <h1 className="font-GTWalsheim text-7xl text-transparent bg-cover bg-clip-text bg-gradient-to-r from-gr-0 via-gr-55 to-gr-100 py-3">
                   Fabio Mijango
                </h1>
-               <p className="font-Inter font-extralight text-black py-8 h-72 w-80 dark:text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                  Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                  Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+               <h3 className="font-Inter font-light text-2xl w-fit text-black dark:text-white hover:animate-pulse dark:hover:animate-pulse">
+                  Computer Engineering student,
+               </h3>
+               <p className="font-Inter font-extralight text-black py-8 w-80 sm:w-96 dark:text-white">
+                  About to start my fourth year of studies.
+                  I am passionate about exploring and continuously learning about different
+                  technologies, programming languages, tools and methodologies to expand and
+                  improve my skills. I stand out for my ability to solve problems efficiently,
+                  combining a deep interest in technology with a solid foundation in
+                  mathematics and calculus applied to programming.
+
                </p>
             </div>
             <div className="max-w-3xl w-80 h-80 bg-gray-700 rounded-lg place-self-center" />
@@ -83,7 +87,7 @@ function Header_() {
          </section>
 
          <section id="contact" className="place-self-center items-center flex flex-col pb-16 gap-10 sm:flex-row"> {/* Section for contact me */}
-            <ContactMeButton text="Send an email" link={""} icon={CiMail}>
+            <ContactMeButton text="Send an email" link={"mailto:fabiomijango@gmail.com"} icon={CiMail}>
                <CiMail size={23} />
             </ContactMeButton>
             <ContactMeButton text="Github" link={"https://github.com/FabioMijango"} icon={FaGithub}>
